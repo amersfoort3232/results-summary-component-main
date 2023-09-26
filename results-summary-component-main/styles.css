@@ -1,0 +1,109 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.Card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 1rem hsl(0 0% 0% / 10%);
+    justify-content: center;
+    margin: auto;
+    max-width: 75vh;
+    text-align: center;
+}
+
+
+/*result part of the card*/
+.left{
+    flex: 50%;
+    min-height: 50vh;
+    background-color: hsl(252, 100%, 67%);
+    border-radius:1rem;
+}
+
+
+
+.summary {
+    text-align: left;
+    padding: 1vh;
+}
+
+
+
+h4 {
+    
+}
+.circle {
+    border-radius: 50%;
+    background-color: hsla(256, 72%, 46%, 1);
+    height: 150px;
+    width:150px;
+    justify-content: center; /*try to center the circle*/
+    align-items: center; /*try to center the circle*/
+
+}
+
+/*The summary part of the card*/
+.right{
+
+}
+
+.Category {
+    padding: 3px;
+    display: grid;
+    text-align: justify;
+    gap: 1.5rem;
+    margin: 15px;
+}
+
+.summary {
+    font-weight:bold;
+}
+
+.Reaction {
+
+    display: grid;
+    padding:3px;
+    min-height: 5vh;
+    background-color: hsl(0, 100%, 67%, 0.4);
+    border-radius:0.5rem;
+    text-align: center; 
+}
+
+.Memory {
+    background-color: hsl(39, 100%, 56%, 0.4);
+    border-radius:0.5rem;
+    min-height: 5vh;
+}
+
+.Verbal {
+    background-color: hsl(166, 100%, 37%, 0.4);
+    border-radius:0.5rem;
+    min-height: 5vh;
+    }
+
+.Visual {
+    background-color: hsl(234, 85%, 45%, 0.4);
+    border-radius:0.5rem;
+    min-height: 5vh;
+}
+
+.Continue{
+    background-color: darkgrey;
+    border-radius: 3rem;
+    min-height: 5vh;
+    padding:5px;
+    margin:3rem;
+    text-align: center; /*try to center the text*/
+}

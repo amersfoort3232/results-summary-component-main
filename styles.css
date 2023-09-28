@@ -30,6 +30,11 @@ body {
     min-height: 50vh;
     background-color: hsl(252, 100%, 67%);
     border-radius:1rem;
+    /* Added a display flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -39,6 +44,15 @@ body {
     padding: 1vh;
 }
 
+/* Added the .categories selector so that I can style the 4 categories in one time*/
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    padding-left: 5px;
+    min-height: 5vh;
+    border-radius:0.5rem;
+}
 
 
 h4 {
@@ -49,8 +63,7 @@ h4 {
     background-color: hsla(256, 72%, 46%, 1);
     height: 150px;
     width:150px;
-    justify-content: center; /*try to center the circle*/
-    align-items: center; /*try to center the circle*/
+    /* Deleted the justify-content and align-items properties */
 
 }
 
@@ -73,30 +86,26 @@ h4 {
 
 .Reaction {
 
-    display: grid;
-    padding:3px;
-    min-height: 5vh;
+    /* Deleted the display:grid here */
     background-color: hsl(0, 100%, 67%, 0.4);
-    border-radius:0.5rem;
-    text-align: center; 
+    /* Cutted all the styles common to the categories and pasted them in the categories selector so that it styles them all in one code-bloc */
+    /* Deleted the align-items: center */
 }
 
 .Memory {
     background-color: hsl(39, 100%, 56%, 0.4);
-    border-radius:0.5rem;
-    min-height: 5vh;
+    /* Cutted all the styles common to the categories and pasted them in the categories selector so that it styles them all in one code-bloc */
+
 }
 
 .Verbal {
     background-color: hsl(166, 100%, 37%, 0.4);
-    border-radius:0.5rem;
-    min-height: 5vh;
+    /* Cutted all the styles common to the categories and pasted them in the categories selector so that it styles them all in one code-bloc */
     }
 
 .Visual {
     background-color: hsl(234, 85%, 45%, 0.4);
-    border-radius:0.5rem;
-    min-height: 5vh;
+    /* Cutted all the styles common to the categories and pasted them in the categories selector so that it styles them all in one code-bloc */
 }
 
 .Continue{
